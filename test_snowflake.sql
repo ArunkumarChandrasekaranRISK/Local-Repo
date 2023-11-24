@@ -1,0 +1,1 @@
+select * from DB_PLAYGROUND.PUBLIC.TBL_SAMPLE where EMPLOYEES > 500;
