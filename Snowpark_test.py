@@ -13,5 +13,5 @@ connection_parameters = {
 
 new_session = Session.builder.configs(connection_parameters).create()
 tableName = 'DB_PLAYGROUND.PUBLIC.TBL_SAMPLE'
-dataframe = new_session.table(tableName).filter(col("EMPLOYEES") > 100)
+dataframe = new_session.table(tableName).filter(col("EMPLOYEES") > 800)
 dataframe.show()
