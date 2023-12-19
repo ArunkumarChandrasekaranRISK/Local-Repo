@@ -3,5 +3,11 @@
     "databricks.python.envFile": "${workspaceFolder}/.env",
     "jupyter.interactiveWindow.cellMarker.codeRegex": "^# COMMAND ----------|^# Databricks notebook source|^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
     "jupyter.interactiveWindow.cellMarker.default": "# COMMAND ----------",
-    "databricks.sync.destinationType": "workspace"
+    "databricks.sync.destinationType": "workspace",
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\chandrasekarana1\\.azurelogicapps\\dependencies\\DotNetSDK;${env:PATH}"
+    },
+    "omnisharp.dotNetCliPaths": [
+        "C:\\Users\\chandrasekarana1\\.azurelogicapps\\dependencies\\DotNetSDK"
+    ]
 }
