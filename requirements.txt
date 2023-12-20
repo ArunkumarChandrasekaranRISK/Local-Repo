@@ -1,0 +1,3 @@
+databricks-connect==12.2.18
+py4j==0.10.9.5
+six==1.16.0
