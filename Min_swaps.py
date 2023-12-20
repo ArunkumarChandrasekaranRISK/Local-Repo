@@ -15,9 +15,10 @@ def min_swaps_to_balance(sequence):
             stack.pop()
             swaps += 1
         else: swaps = -1; break
+    print(stack)
     return swaps
 
 # Example usage:
-sequence = "))()(())()(())("
+sequence = "(()))("
 result = min_swaps_to_balance(sequence)
 print(result)
