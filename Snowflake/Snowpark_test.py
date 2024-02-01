@@ -1,15 +1,19 @@
+import os
+import io
+import sys
+from dotenv import load_dotenv
 from snowflake.snowpark import Session
 from snowflake.snowpark.functions import col
-
+load_dotenv()
 connection_parameters = {
-    "account": "ag08457.east-us-2.azure",
-    "user": "CHANDRASEKARANA1",
-    "password": "Psg@04p606",
-    "role": "SYSADMIN",  # optional
-    "warehouse": "XHRPLAYGROUND",  # optional
-    "database": "DB_PLAYGROUND",  # optional
-    "schema": "PUBLIC",  # optional
-  }  
+                                "account": os.getenv('account'),
+                                "user": os.getenv('user'),
+                                "password": os.getenv('password'),
+                                "role": os.getenv('role'), 
+                                "warehouse": os.getenv('warehouse'),
+                                "database": os.getenv('database'),
+                                "schema": os.getenv('schema')
+                            }
 
 new_session = Session.builder.configs(connection_parameters).create()
 tableName = 'DB_PLAYGROUND.PUBLIC.TBL_SAMPLE'

@@ -1,6 +1,5 @@
 {
   "host": "https://adb-5574507938989659.19.azuredatabricks.net/",
   "authType": "azure-cli",
-  "clusterId": "0403-144525-ndgt1euk",
   "workspacePath": "/Users/chandrasekarana1@b2b.regn.net/.ide/Local Repo"
 }
